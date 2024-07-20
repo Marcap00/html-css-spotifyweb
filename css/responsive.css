@@ -1,16 +1,35 @@
-/* 576px to 768px Extra Small */
+/* 576px to 768px Small */
 @media screen and (min-width: 576px){
+    .sidebar {
+        flex-basis: 190px;
+        align-items: flex-start;
+    }
     
-
+    .hidden {
+        display: block;
+    }
+    
+    .install {
+        padding-bottom: 30px;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    .sidebar img {
+        margin-right: 5px;
+    }
+    
 }
 
 
-/* 768px to 1200 Small */
+/* 768px to 1200 medium*/
+@media screen and (min-width: 768px){
+    .icon-left {
+        display: flex;
+        gap: 5px;
+    }
+}
+/* 1200px to up large */
 
-/* 1200px to up medium */
 
 
-/* .icon-left {
-    display: flex;
-    gap: 5px;
-} */
+

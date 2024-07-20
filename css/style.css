@@ -36,8 +36,20 @@ a {
     font-size: 12px;
 }
 
+.bold {
+    font-weight: 600;
+}
 .text-grey {
     color: #8b8b8b;
+}
+
+.splitter {
+    border: 1px solid lightgray;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
 }
 
 /* General Layout */
@@ -59,6 +71,88 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Big wrapper */
+.big-wrapper {
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    flex-basis: 60px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 25px;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.sidebar-nav {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav > * {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav > *,
+.sidebar-bottom > * {
+    display: flex;
+    align-items: center;
+}
+
+.playlist-items > * {
+    margin-bottom: 20px;
+}
+
+.plus {
+    background-color: rgb(175, 175, 175);
+    color: black;
+    padding: 5px 10px;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.install {
+    margin-bottom: 30px;
+}
+
+.install img {
+    width: 20px;
+}
+
+.profile img {
+    
+    background-color: gray;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.search,
+.library,
+.playlist-items li:not(:first-child),
+.install {
+    color: #8b8b8b;
+}
+
+/* Small Wrapper */
+.small-wrapper {
+    flex-grow: 1;
+    background-color: #141922;
 }
 
 /* Footer */

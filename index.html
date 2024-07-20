@@ -14,26 +14,84 @@
          <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
+        <!-- Big Wrapper -->
         <div class="big-wrapper">
-            <nav class="sidebar"></nav>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar top side -->
+                <div class="sidebar-top">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="img/logo-small.svg" alt="">
+                    </div>
+                    <!-- Navigation bar -->
+                    <nav class="sidebar-nav">
+                        <div class="home">
+                            <img src="img/home.svg" alt="">
+                            <div class="sm-text hidden">Home</div>
+                        </div>
+                        <div class="search">
+                            <img src="img/search.svg" alt="">
+                            <div class="sm-text hidden">Search</div>
+                        </div>
+                        <div class="library">
+                            <img src="img/libreria.svg" alt="">
+                            <div class="sm-text hidden">La tua libreria </div>
+                        </div>
+                    </nav>
+                    <!-- Playlist sidebar -->
+                    <div class="playlist-sidebar hidden">
+                        <ul class="playlist-items">
+                            <li><h3>PLAYLIST</h3></li>
+                            <li><span class="plus"><i class="fa-solid fa-plus "></i></span> Crea Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sidebar Bottom Side -->
+                <div class="sidebar-bottom">
+                    <div class="install">
+                        <img src="img/download.svg" alt="">
+                        <div class="sm-tex hidden">Installa App</div>
+                    </div>
+                    <div class="profile">
+                        <img src="img/profile.svg" alt="">
+                        <div class="sm-text hidden">John Doe</div>
+                    </div>
+                </div>                
+            </div>
+            <!-- Small Wrapper -->
             <div class="small-wrapper">
+                <!-- Header -->
                 <header>
 
                 </header>
+                <!-- Main -->
                 <main>
 
                 </main>
             </div>
         </div>
+        <!-- Footer -->
         <footer>
+            <!-- Player -->
             <div class="player row wrap cols-3">
+                <!-- Left side player -->
                 <div class="player-left">
                     <div class="row">
+                        <!-- Image Player -->
                         <div class="col flex-center">
                             <div class="player-image">
                                 <img src="img/sinister.jpeg" alt="">
                             </div>
                         </div>
+                        <!-- List name song, name album, name artist -->
                         <div class="col">
                             <ul class="player-list">
                                 <li class="name-song-player"><a class="sm-text" href="#">Sinister</a></li>
@@ -41,6 +99,7 @@
                                 <li class="name-artist-player"><a class="text-grey xs-text" href="#">Nome</a></li>
                             </ul>
                         </div>
+                        <!-- Icon -->
                         <div class="col flex-center">
                             <div class="icon-left">
                                 <div class="favourite">
@@ -53,7 +112,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- Central Side Player -->
                 <div class="player-middle grow">
+                    <!-- Buttons -->
                     <div class="buttons-player flex-center">
                         <div class="casual">
                             <i class="fa-solid fa-shuffle"></i>
@@ -71,6 +132,7 @@
                             <i class="fa-solid fa-arrow-rotate-right"></i>
                         </div>
                     </div>
+                    <!-- Bar Time -->
                     <div class="bar-player flex-center">
                         <span class="xs-text">0:25</span>
                         <div class="bar-container">
@@ -79,9 +141,10 @@
                         <span class="xs-text">4.35</span>
                     </div>
                 </div>
+                <!-- Left side player -->
                 <div class="player-right ">
                     <div class="row">
-
+                        <!-- Icon -->
                         <div class="icon-right flex-center">
                             <div class="playlist-player">
                                 <i class="fa-solid fa-list-ul"></i>
@@ -93,13 +156,12 @@
                                 <i class="fa-solid fa-volume-high"></i>
                             </div>
                         </div>
-                        
+                        <!-- Bar volume -->
                         <div class="bar-volume">
                             <div class="bar-container">
                                 <div class="bar"></div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
