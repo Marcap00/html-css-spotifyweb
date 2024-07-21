@@ -1,5 +1,7 @@
 /* 576px to 768px Small */
 @media screen and (min-width: 576px){
+    
+    /* Sidebar */
     .sidebar {
         flex-basis: 190px;
         align-items: flex-start;
@@ -17,19 +19,51 @@
     .sidebar img {
         margin-right: 5px;
     }
+
+    .logo-sm {
+        display: none;
+    }
+
+    img.logo-md {
+        width: 120px;
+    }
+    
+    /* Small Wrapper */
+    .small-wrapper header {
+        width: calc(100% - 190px);
+    }
+    
+    /* Navbar main */
+    .navbar-main .row.wrap.cols-4 > * {
+        flex-basis: calc(100% / 3);
+        
+    }
+ 
     
 }
 
 
 /* 768px to 1200 medium*/
 @media screen and (min-width: 768px){
+    /* Icon left player */
     .icon-left {
         display: flex;
         gap: 5px;
     }
+
+    /* Navbar main */
+    .navbar-main .row.wrap.cols-4 > * {
+        flex-basis: 20%;
+    }
 }
 /* 1200px to up large */
+@media screen and (min-width: 1200px){
+    /* Navbar main */
+    .navbar-main .row.wrap {
+        flex-wrap: nowrap;
+    }
 
 
+}
 
 
