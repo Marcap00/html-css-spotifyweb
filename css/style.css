@@ -86,8 +86,13 @@ a {
 }
 
 .row.wrap.g-1 > .col {
-    padding: 0 0.5rem;
+    padding: 0.5rem 0.5rem;
 }
+
+.row.wrap.cols-2 > * {
+    flex-basis: 50%;
+}
+
 
 .row.wrap.cols-4 > * {
     flex-basis: 25%;
@@ -206,12 +211,12 @@ a {
 /* Header */
 .small-wrapper header {
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 17px;
-    width: calc(100% - 60px);
+    right: 0;
+    left: 0;
 }
 
 header .row {
@@ -230,27 +235,57 @@ header .row {
 
 /* Main */
 main {
-    padding: 110px 0 0 0;
     height: calc(100vh - 100px);
     overflow: auto;
-    
 }
+
+
 
 /* Navbar main */
 .navbar-main .row.wrap.g-1 {
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px 0;
 } 
 
 .navbar-main ul li {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .navbar-main a{
     color: #8b8b8b;
     font-size: 12px;
     font-weight: 700;
+}
+
+/* Content */
+.content {
+    color: #fff;
+    padding: 0 15px;
+}
+
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+/* Card */
+.card-text {
+    text-align: center;
+}
+
+.card-image {
+    margin-bottom: 0.5rem;
+}
+
+.card-text h3 {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+.card-text h4 {
+    font-size: 12px;
+    color: #8b8b8b;
 }
 
 /* Footer */
@@ -267,6 +302,7 @@ footer i {
 footer .play i {
     font-size: 24px;
 }
+
 
 /* Footer Left */
 .player-left .row > * {
