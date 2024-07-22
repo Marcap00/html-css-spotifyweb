@@ -270,7 +270,7 @@ main {
 }
 
 .content h2 {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .content h4 {
@@ -292,12 +292,15 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Section Dedicated */
-.dedicated h2 {
-    margin-bottom: 5px;
+
+/* Sectione recent */
+.content .recent h2 {
+    margin-bottom: 20px;
 }
 
-.dedicated h4 {
+/* Section Dedicated */
+
+.content section > h4 {
     margin-bottom: 20px;
 }
 
