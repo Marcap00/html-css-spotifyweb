@@ -3,8 +3,8 @@
     
     /* Sidebar */
     .sidebar {
-        flex-basis: 190px;
-        align-items: flex-start;
+        flex-basis: 180px;
+        align-items: stretch;
     }
     
     .hidden {
@@ -12,8 +12,8 @@
     }
     
     .install {
-        padding-bottom: 30px;
-        border-bottom: 1px solid lightgray;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #8b8b8b;
     }
     
     .sidebar img {
@@ -27,13 +27,31 @@
     img.logo-md {
         width: 120px;
     }
-    
-    
+
+    /* Border effect */
+    .sidebar {
+        padding: 0;
+    }
+
+    .sidebar .logo,
+    ul.playlist-items,
+    .sidebar-bottom {
+        padding: 15px;
+    }
+
+    .sidebar .home {
+        border-left: 3px solid greenyellow;
+        padding-left: 12px;
+    }
+
+    .sidebar nav > * {
+        padding-left: 15px;
+    }
+
     /* Navbar main */
     .navbar-main .row.wrap > * {
         flex-basis: calc(100% / 3);
     }
-    
     
 }
 
@@ -63,7 +81,7 @@
     .navbar-main .row.wrap {
         flex-wrap: nowrap;
     }
-    
+
     /* Content */
     .content .row.wrap > * {
         flex-basis: calc(100% / 6);

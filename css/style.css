@@ -26,6 +26,7 @@ a {
     text-decoration: none;
     color: white;
     font-size: 14px;
+    display: block;
 }
 
 
@@ -143,7 +144,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .sidebar img {
@@ -160,6 +160,7 @@ a {
 
 .sidebar-nav > * {
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .sidebar-nav > *,
@@ -171,6 +172,7 @@ a {
 .playlist-items > * {
     margin-bottom: 20px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .plus {
@@ -182,7 +184,8 @@ a {
 }
 
 .install {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .install img {
@@ -200,6 +203,12 @@ a {
 .playlist-items li:not(:first-child),
 .install {
     color: #8b8b8b;
+}
+
+.sidebar-nav > *:hover,
+.playlist-items li:hover,
+.install:hover {
+    color: white;
 }
 
 /* Small Wrapper */
@@ -234,13 +243,19 @@ header .row {
     margin-right: 10px;
 }
 
+.upgrade-btn:hover {
+    scale: 1.05;
+}
+
+.upgrade-btn:active {
+    scale: 1;
+}
+
 /* Main */
 main {
     height: calc(100vh - 100px);
     overflow: auto;
 }
-
-
 
 /* Navbar main */
 .navbar-main .row.wrap.g-1 {
@@ -257,6 +272,17 @@ main {
     color: #8b8b8b;
     font-size: 12px;
     font-weight: 700;
+}
+
+.navbar-main a:hover {
+    color: #fff;
+}
+
+.line {
+    width: 2rem;
+    margin: 5px auto 0;
+    border: 1px solid greenyellow;
+
 }
 
 /* Content */
