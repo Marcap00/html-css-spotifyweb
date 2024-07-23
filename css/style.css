@@ -34,7 +34,7 @@ a {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     
 }
 
@@ -259,11 +259,11 @@ main {
 
 /* Navbar main */
 .navbar-main .row.wrap.g-1 {
-    justify-content: center;
     margin: 20px 0;
 } 
 
 .navbar-main ul li {
+    flex-grow: 1;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -305,11 +305,16 @@ main {
 }
 
 /* Card */
+.card {
+    cursor: pointer;
+}
+
 .card-text {
     text-align: center;
 }
 
 .card-image {
+    position: relative;
     margin-bottom: 0.5rem;
 }
 
@@ -318,7 +323,22 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .overlay {
+    display: flex;
+}
 /* Sectione recent */
 .content .recent h2 {
     margin-bottom: 20px;
@@ -335,6 +355,9 @@ main {
     border-radius: 50%;
 }
 
+.popular .overlay {
+    border-radius: 50%;
+}
 
 
 /* Footer */
