@@ -227,6 +227,8 @@ a {
     top: 0;
     right: 0;
     left: 0;
+
+    z-index: 1;
 }
 
 header .row {
@@ -245,6 +247,7 @@ header .row {
 
 .upgrade-btn:hover {
     scale: 1.05;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.904);
 }
 
 .upgrade-btn:active {
@@ -309,14 +312,15 @@ main {
     cursor: pointer;
 }
 
-.card-text {
-    text-align: center;
-}
-
 .card-image {
     position: relative;
     margin-bottom: 0.5rem;
 }
+
+.card-text {
+    text-align: center;
+}
+
 
 .card-text h3 {
     font-size: 14px;
@@ -339,6 +343,10 @@ main {
 .card:hover .overlay {
     display: flex;
 }
+
+.card-image:hover {
+    scale: 1.05;
+}
 /* Sectione recent */
 .content .recent h2 {
     margin-bottom: 20px;
@@ -351,20 +359,16 @@ main {
 }
 
 /* Section popular */
+.popular .overlay,
 .popular img {
     border-radius: 50%;
 }
-
-.popular .overlay {
-    border-radius: 50%;
-}
-
 
 /* Footer */
 .player.row {
     align-items: center;
     height: 80px;
-    gap: 5px;
+    gap: 10px;
 }
 
 footer i {
